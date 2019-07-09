@@ -1,0 +1,27 @@
+.container{
+    padding:20px;
+    
+}
+
+.profile{
+    padding: 10px;
+    border: #000000 2px solid;
+    width: auto;
+    display: block;
+}
+.outerDiv{
+    background: #17a2b8;
+    height: 80px;
+}
+
+.innerDiv{
+    padding:20px;
+}
+.dis{
+    padding:20px;
+}
+.btn{
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}

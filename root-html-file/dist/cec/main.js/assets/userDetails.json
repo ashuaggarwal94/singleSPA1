@@ -1,0 +1,30 @@
+{
+    "Users":[
+      {
+           "username": "user1",
+            "userId": 1,
+            "emailId": "example1@rsystem.com",
+            "age": 23
+       },{
+            "username": "user2",
+            "userId": 2,
+            "emailId": "example2@rsystem.com",
+             "age": 24
+        }, {
+            "username": "user3",
+            "userId": 3,
+            "emailId": "example3@rsystem.com",
+            "age": 25
+        },{
+            "username": "user4",
+            "userId": 4,
+            "emailId": "example4@rsystem.com",
+            "age": 26
+        }, {
+            "username": "user5",
+             "userId": 5,
+             "emailId": "example5@rsystem.com",
+             "age": 27
+        }
+    ]
+    }
