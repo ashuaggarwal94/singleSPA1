@@ -16,16 +16,11 @@ export class SearchComponent {
   details: User[] = [];
   display = true;
   onClick(inputEmail: String) {
-    if (inputEmail.toLocaleLowerCase().match("rsystem")) {
+    if (inputEmail.toLocaleLowerCase().match("demo")) {
       this.details = [];
       this.display = true;
       console.log(this.display);
-      // this.http.get('../../assets/userDetails.json')
-      //            .subscribe(data => {
-      //              for(let i in data){
-      //                this.details.push(data[i]);
-      //              }
-      //            });
+
       for (let [key, user] of Object.entries(json.Users)) {
         this.details.push(user);
       }

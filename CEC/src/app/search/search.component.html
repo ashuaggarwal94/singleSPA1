@@ -1,33 +1,31 @@
 <div class="container">
-    <div class="row outerDiv">
-        <div class="innerDiv">
-          <div class="col-md-10">
-            <input class="form-control" [(ngModel)]="emailInput" type="text"  />
-          </div>
-          <div class="col-md-2">
-            <button class="btn btn-primary" (click)="onClick(emailInput)">Search</button>
-          </div>
-        
+  <div class="row outerDiv">
+    <div class="innerDiv">
+      <div class="col-md-10">
+        <input class="form-control" (keyup.enter)="onClick(emailInput)" [(ngModel)]="emailInput" type="text" />
       </div>
-    </div>
-    <div class="row dis" >
-    <div *ngIf="display">
-        <div *ngFor="let dets of details">
-          <div class="row profile">
-            <div class="col-md-10">
-                <h3>User Name: {{dets.username}}</h3>
-                <p>Email Address: {{dets.emailId}}</p>
-                <p>age: {{dets.age}} </p>      
-            </div>
-            <div class="col-md-2">
-              <button class="btn btn-primary" (click)="onSelect(dets)">View Profile</button>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div *ngIf="!display">
-        <h3>No content to display</h3>
+      <div class="col-md-2">
+        <button class="btn btn-primary" (click)="onClick(emailInput)">Search</button>
+      </div>
+
     </div>
   </div>
-
-  
+  <div class="row dis">
+    <div *ngIf="display">
+      <div *ngFor="let dets of details">
+        <div class="row profile">
+          <div class="col-md-10">
+            <h3>User Name: {{dets.username}}</h3>
+            <p>Email Address: {{dets.emailId}}</p>
+            <p>age: {{dets.age}} </p>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary" (click)="onSelect(dets)">View Profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!display">
+      <h3>No content to display</h3>
+    </div>
+  </div>
