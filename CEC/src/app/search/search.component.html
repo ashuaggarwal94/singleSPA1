@@ -2,10 +2,10 @@
   <div class="row outerDiv">
     <div class="innerDiv">
       <div class="col-md-10">
-        <input class="form-control" (keyup.enter)="onClick(emailInput)" [(ngModel)]="emailInput" type="text" />
+        <input class="form-control" #email (keyup.enter)="onClick(email.value)" type="text" />
       </div>
       <div class="col-md-2">
-        <button class="btn btn-primary" (click)="onClick(emailInput)">Search</button>
+        <button class="btn btn-primary" (click)="onClick(email.value)">Search</button>
       </div>
 
     </div>

@@ -10,3 +10,6 @@ follow the below steps.
 5. npm i 
 6. npm run start
 7. open the browser and browse to http://localhost:4200
+
+
+Search user with demo.
